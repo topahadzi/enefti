@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="184dp"
+    android:layout_height="270dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    >
+    <androidx.cardview.widget.CardView
+        android:id="@+id/roundedView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10dp"
+        android:elevation="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="2dp"
+    >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.google.android.material.imageview.ShapeableImageView
+                app:shapeAppearanceOverlay="@style/roundedImageView"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:id="@+id/nft_img"
+                android:src="@drawable/collection_example"
+                android:background="@drawable/drawable_radius"
+                app:layout_constraintTop_toTopOf="@id/roundedView"
+                app:layout_constraintStart_toStartOf="@id/roundedView"
+                app:layout_constraintEnd_toEndOf="@id/roundedView"
+                android:scaleType="centerCrop"
+                />
+            <TextView
+                android:id="@+id/nft_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/nft_img"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Himalaya"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/nft_floor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                app:layout_constraintTop_toBottomOf="@id/nft_title"
+                app:layout_constraintStart_toStartOf="@id/nft_title"
+                android:textSize="13sp"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:id="@+id/nft_floor_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.51 ETH"
+                app:layout_constraintTop_toBottomOf="@id/nft_floor"
+                app:layout_constraintStart_toStartOf="@id/nft_floor"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

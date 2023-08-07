@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="graybg">#FAF9F9</color>
+    <color name="blue">#2282E6</color>
+    <color name="gray">#D6D6D6</color>
+    <color name="hoverColor">#A3A3A3</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="overlay_black">#4A000000</color>
+</resources>

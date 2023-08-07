@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ENEFTI</string>
+    <string name="rankings">Rankings</string>
+    <string name="home">Home</string>
+    <string-array name="spinner_items">
+        <item>All</item>
+        <item>1d</item>
+        <item>7d</item>
+        <item>30d</item>
+    </string-array>
+</resources>
